@@ -118,3 +118,144 @@ align-items: center;
 flex-shrink: 0;
 
 }
+
+/*OUR SERVICES*/
+.container2{
+    width: 1177px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.block2{
+    width: 1170px;
+    height: 751px;
+    flex-shrink: 0;
+}
+
+ .inside .img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding-right: 180px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.inside .numri{
+    color: #EFEFEF;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73.2px; 
+    padding-right: 20px;
+   
+}
+.box .inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betwen;
+    align-items: center;
+    order: 1;
+}
+
+.kutiat{
+    display: flex;
+}
+.kutiat2{
+    display: flex;
+}
+
+.box {
+    align-items: center;
+    width: 370px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+background: var(--Whit, #FFF);
+
+
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+margin: 10px;
+   
+}
+.box h1{
+    color: var(--Black, #373737);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37.5px; 
+
+    padding-left: 25px;
+}
+.box p{
+    
+    color: var(--Paragraph, #7B7B7B);
+    font-family: Poppins;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19.2px; 
+
+    padding-left: 25px;
+    
+}
+.box p1{
+   
+width: 325px;
+height: 77px;
+flex-shrink: 0;
+
+color: var(--Paragraph, #7B7B7B);
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+
+
+}
+.box--container{
+    width:325px;
+    margin: auto 0;
+}
+
+
+.numri{
+    
+    color: #EFEFEF;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73.2px; 
+}
+
+/*CSS i Ri */
+
+.services{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.txt-services{
+    font-family: Poppins;
+font-size: 39.063px;
+font-style: normal;
+font-weight: 600;
+line-height: 58.59px;
+
+    margin-bottom: 20px;
+   
+}
+.tiulli-services{
+    position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f35500;
+}
+
+
+
