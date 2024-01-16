@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background: var(--orange-background, #FFF7F4);
+}
+
+
+
+header {
+    background: var(--orange-background, #FFF7F4);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+    padding-top: 41px;
+}
+
+.container{
+    width: 1177px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo img {
+    justify-content: flex-start;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 175.186px;
+    height: 46.939px;
+    padding-top: 26.88px;
+    font-family: Work Sans;
+    font-size: 39.06px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.navbar{
+    padding-top: 41px;
+    
+}
+.navbar a {
+    color: rgb(18, 18, 18);
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 14px 16px;
+    line-height: 30px;
+    
+}
+.navbar a.button1 {
+    border-radius: 5px;
+    border: 1px solid var(--Black, #373737);
+    padding: 10px 22px;
+
+}
+
+.navbar a:hover {
+    color: var(--Orange, #FF5300);
+   
+}
+.main{
+    display: flex;
+
+}
+.block{
+    padding-top: 159px;
+    padding-bottom: 150px;
+}
+.paragrafi{
+    width: 602px;
+    color: var(--Black, #373737);
+    font-family: Poppins;
+    
+    
+/* H1 */
+
+font-size: 48.83px;
+font-style: normal;
+font-weight: 700;
+line-height: 73.2px; /* 149.908% */
+}
+.texti{
+    width: 586px;
+    height: 76px;
+    color: var(--Paragraph, #7B7B7B);
+    font-family: Poppins;
+    padding-bottom: 25px;
+}
+
+.button{
+    color: white;
+    display: flex;
+    padding: 10px 22px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px ;
+    border: none;
+    background: var(--Orange, #FF5300);
+}
+
+.div2 img{
+    display: flex;
+width: 553.028px;
+height: 470.913px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+
+}
