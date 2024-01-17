@@ -199,7 +199,7 @@ flex-shrink: 0;
     font-weight: 300;
     line-height: 19.2px; 
 
-    ;
+    
     
 }
 .box p1{
@@ -253,7 +253,7 @@ line-height: 58.59px;
     margin-bottom: 20px;
    
 }
-.tiulli-services{
+.titulli-services{
     position: relative;
   display: inline-block;
   margin-bottom: 15px;
@@ -261,8 +261,8 @@ line-height: 58.59px;
   line-height: 24px;
   color: #f35500;
 }
-.tiulli-services:after,
-.tiulli-services:before {
+.titulli-services:after,
+.titulli-services:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -270,10 +270,10 @@ line-height: 58.59px;
   height: 1px;
   background-color: #f35500;
 }
-.tiulli-services:after {
+.titulli-services:after {
   right: -49px;
 }
-.tiulli-services:before {
+.titulli-services:before {
   left: -49px;
 }
 
@@ -282,6 +282,174 @@ line-height: 58.59px;
     width: 80px;
     height: 80px;
 }
+/*About us css Section*/
+
+.block2{
+    width: 1177px;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right); 
+}
+.about-us-main {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.about-us-content span {
+    color: #FF5300; /* Use a specific color or keep the variable if defined */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative; /* Add this to create a positioning context for pseudo-elements */
+}
+
+
+ 
+
+.about-us2:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #f35500;
+}
+.about-us2:after {
+  right: -49px;
+}
 
 
 
+.about-us-content h1 {
+    font-family: Poppins;
+    font-size: 39.063px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58.59px;
+    color: var(--Black, #373737);
+    
+}
+
+.about-us-content p {
+    color: var(--Paragraph, #7B7B7B);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.about-us-content img{
+    display: flex;
+    width: 620.743px;
+    height: 387.672px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.img1{
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+}
+
+.ticks {
+    padding-top: 15px;
+ }
+ 
+ .ticks p {
+    color: var(--black);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+ 
+    /* padding-top: 15px; */
+ }
+ 
+ .ticks p img {
+    padding-right: 15px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+ }
+
+
+
+
+                               /*Our Recent Project*/
+
+.block3{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.study-case-top{
+    text-align: center;
+}
+.study-case-header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    
+}
+.study-case-header a{
+    text-decoration: none;
+    color: var(--Paragraph, #7B7B7B);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+    transition: all 0.3s ease; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.study-case-header a:hover {
+    
+    width: 126px;
+    height: 60px;
+    flex-shrink: 0;
+    color: var(--Orange, #f7f4f3);
+    border-radius: 10px;
+    background: var(--Orange, #FF5300);
+    text-align: center; /* Center the text on hover */
+   
+   
+}
+.study-case-top span{
+    color: var(--Orange, #FF5300);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  
+}
+.study-case-top h1{
+    
+    color: var(--Black, #373737);
+    font-family: Poppins;
+    font-size: 39.063px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58.59px; /* 149.99% */
+}
+
+.study-case-main {
+    display: grid;
+    grid-template-columns:3fr;
+   
+  
+}
