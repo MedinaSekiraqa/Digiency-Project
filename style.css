@@ -131,14 +131,8 @@ flex-shrink: 0;
     flex-shrink: 0;
 }
 
- .inside .img {
-    display: flex;
-    width: 80px;
-    height: 80px;
-    padding-right: 180px;
-    padding-top: 30px;
-    padding-left: 25px;
-}
+
+
 .inside .numri{
     color: #EFEFEF;
     font-family: Poppins;
@@ -146,22 +140,30 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 600;
     line-height: 73.2px; 
-    padding-right: 20px;
+    
    
 }
-.box .inside{
+.inside img{
+    padding-left: 25px;
+}
+.inside{
     display: flex;
-    flex-direction: row;
-    justify-content: space-betwen;
-    align-items: center;
-    order: 1;
+    
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+.foto{
+    padding-right: 180px;
 }
 
 .kutiat{
     display: flex;
+    flex-wrap: wrap;
 }
 .kutiat2{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -170,12 +172,13 @@ flex-shrink: 0;
     height: 300px;
     flex-shrink: 0;
     border-radius: 10px;
-background: var(--Whit, #FFF);
-
-
-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
-margin: 10px;
+    background: var(--Whit, #FFF);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    margin: 10px;
    
+}
+.box-body{
+    padding-left: 25px;
 }
 .box h1{
     color: var(--Black, #373737);
@@ -185,7 +188,7 @@ margin: 10px;
     font-weight: 600;
     line-height: 37.5px; 
 
-    padding-left: 25px;
+    
 }
 .box p{
     
@@ -196,7 +199,7 @@ margin: 10px;
     font-weight: 300;
     line-height: 19.2px; 
 
-    padding-left: 25px;
+    ;
     
 }
 .box p1{
@@ -211,10 +214,12 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; 
+line-height: 24px;
+ 
 
 
 }
+ 
 .box--container{
     width:325px;
     margin: auto 0;
@@ -255,6 +260,27 @@ line-height: 58.59px;
   font-size: 16px;
   line-height: 24px;
   color: #f35500;
+}
+.tiulli-services:after,
+.tiulli-services:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #f35500;
+}
+.tiulli-services:after {
+  right: -49px;
+}
+.tiulli-services:before {
+  left: -49px;
+}
+
+.picture-class{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
 }
 
 
