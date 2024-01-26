@@ -34,3 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
  }
  prevButton.addEventListener("click", prevSlide);
  nextButton.addEventListener("click", nextSlide);
+
+ 
+
+
