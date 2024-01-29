@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
  }
  
  function prevSlide() {
-    if (currentIndex > 0) {
-       showSlide(currentIndex - 1);
-    }
+   if (currentIndex > 0) {
+      showSlide(currentIndex - 1);
+   }
  }
  prevButton.addEventListener("click", prevSlide);
  nextButton.addEventListener("click", nextSlide);
