@@ -122,14 +122,15 @@ body {
   }
   .btn-head {
     text-align: center;
-    display: inline-block;
+    display: flexbox;
     padding: 10px 22px;
-    align-items: flex-start;
+    align-items: center;
     width: 135px;
     height: 50px;
     border-radius: 5px;
     border: 1px solid var(--black);
   }
+  
   
   #home {
     min-height: 850px;
@@ -688,6 +689,7 @@ flex-shrink: 0;
                                         display: flex;
                                         width: 100%;
                                         transition: transform 0.5s ease-in-out;
+                                        gap:30px;
                                      }
                                      
                                      .slider-item {
@@ -710,8 +712,10 @@ flex-shrink: 0;
                                         font-weight: 400;
                                         line-height: 24px;
                                         width: 320px;
-                                        height: 100px;
+                                      
                                         flex-shrink: 0;
+                                        height: auto; /* Allow the height to adjust based on content */
+                                        overflow: hidden; /* Hide overflowing content */
                                      }
                                      
                                      .button {
@@ -724,7 +728,7 @@ flex-shrink: 0;
                                         color: var(--primary-color, #ff5300);
                                         border: none;
                                         cursor: pointer;
-                                        width: 50px;
+                                        width: 10%;
                                         height: 50px;
                                         border-radius: 50%;
                                         border: 1px;
@@ -746,7 +750,7 @@ flex-shrink: 0;
                                         height: 50px;
                                         width: 50px;
 
-                                        margin-right: -72px;
+                                        margin-right: -5%;
                                         
                                         /* margin-right: -80px; */
                                         stroke-width: 1px;
@@ -793,8 +797,7 @@ flex-shrink: 0;
                                         line-height: 58.59px; 
                                     
                                      }
- 
-                                     
+                                                                         
                                      .slider-container {
                                        
                                         overflow: hidden;
@@ -1176,7 +1179,7 @@ line-height: 58.59px; /* 149.99% */
 .our-blog-card{
 
     width: 33.33%;
-    padding: 0 15px;
+   
     
     
     
@@ -1266,13 +1269,15 @@ padding-bottom: 25px;
                                         /*SUBSCRIBE*/
 
 .subscribe {
+    padding-top: 51px;
+    padding-bottom: 51px;
    
     justify-content: space-between;
     
     display: flex;
     flex-direction: row;
     
-    width: 100%px;
+    width: 100%;
     height: auto;
     flex-shrink: 0;
     border-radius: 10px;
@@ -1282,14 +1287,14 @@ padding-bottom: 25px;
 
 .subscribe-div1 {
     width: 100%;
-    margin-top: 51px;
-    margin-bottom: 20px;
-    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
     
 }
 
 .subscribe-div1-span {
-    margin-top: 20px;
+    margin-top: 10px;
     color: var(--White, #FFF);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -1305,22 +1310,22 @@ padding-bottom: 25px;
     content: "";
     position: absolute;
     top: 50%;
-    width: 40px;
+    width: 20px;
     height: 1px;
     background-color: #FFF;
-    right: -49px; /* Adjust the position based on your design */
+    right: -29px; /* Adjust the position based on your design */
 }
 
 
 .subscribe-div1 h1 {
-    margin-top: 10px;
+    margin-top: 5px;
     color: var(--White, #FFF);
     font-family: 'Poppins', sans-serif;
     font-size: 39.063px;
     font-style: normal;
     font-weight: 600;
     line-height: 58.59px; /* 149.99% */
-    padding-bottom: 51px;
+    padding-bottom: 20px;
 }
 
 
@@ -1543,12 +1548,6 @@ padding-bottom: 25px;
 
 /**/
 
-.container2{
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
 
 
 .footer {
@@ -1805,6 +1804,7 @@ padding-bottom: 25px;
 
 
         /*SLIDER */
+
         
         
         
@@ -1874,31 +1874,34 @@ padding-bottom: 25px;
 
 
     /*SUBSRIBE*/
-    .subscribe-div2 > div {
-        flex-direction: column; 
-        
-        justify-content: center;
+    .subscribe {
+        flex-direction: column; /* Stack divs in a column on smaller screens */
+        align-items: center; /* Center align items in the column */
     }
+
+    .subscribe-div1 {
+        padding-left: 10px;
+    }
+    .subscribe-div2 {
+        padding-right: 20px; /* Adjusted padding for smaller screens */
+        padding-left: 20px;
+    }
+
+    .subscribe-div2 > div {
+        flex-direction: column;
+        height: auto;
+    }
+
     .subscribe-div2 > div > input {
-        margin-bottom: 0;
-        margin-right: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 8px;
     }
 
     .subscribe-div2 > div > button {
-        margin-top: 0;
-    }
-    
-    .subscribe {
-        flex-direction: column; 
-    }
-    
-    .subscribe-div1 {
-        width: 40%;
-        margin-bottom: 0;
-    }
-
-    .subscribe-div2 {
-        width: 60%;
+        height: 50px;
+        font-size: 16px;
     }
     
 
@@ -1997,14 +2000,26 @@ padding-bottom: 25px;
 
 
   @media only screen and (max-width: 767px) {
-    /* Adjust styles for screens up to 767px width */
+    
     .clients-content_body {
-        padding: 0 15px; /* Add padding to the container for smaller screens */
+        padding: 0 15px; 
+    }
+    .slider-wrapper {
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .slider-paragraph {
+         /* Set full width for smaller screens */
+        font-size: 14px; 
+
+       
+        
+        
     }
 
     .slider-item {
         width: calc(50% - 15px);
-        margin-right: 0; 
+        
     }
 }
 
@@ -2013,10 +2028,7 @@ padding-bottom: 25px;
     .slider-item {
         width: 100%; 
     }
-    .prev-button::before {
-        border-width: 4px 6px 4px 0; 
-        margin-right: 2px; 
-    }
+   
 
     /*OUR CASE STUDY*/
 
@@ -2050,12 +2062,11 @@ padding-bottom: 25px;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    /* Adjust styles for screens up to 767px width */
-    .prev-button::before {
-        border-width: 6px 9px 6px 0; /* Adjust border-width for smaller screens */
-        margin-right: 4px; /* Adjust margin for smaller screens */
+@media only screen and (max-width: 768px) {
+    .button {
+        font-size: 14px; /* Adjust as needed */
     }
+   
 }
 
 
@@ -2156,14 +2167,54 @@ padding-bottom: 25px;
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+    .footer-h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .footer-paragraph {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-icons-icon {
+        width: 30px;
+        height: 30px;
+        gap: 10px;
+    }
+
+    .footer-footer_section2 > div > p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .footer-copyright_paragraph {
-        margin: 0 auto; /* Center the paragraph horizontally */
-        text-align: center; /* Center the text within the paragraph */
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .arrow-up-button > img {
+        width: 24px;
+        height: 24px;
     }
 }
  
  
 
-
+@media (max-width: 1300px) {
+    .button-prev {
+      left: 0;
+    }
   
+    .button-next {
+      right: 0;
+    }
+}
+
+
